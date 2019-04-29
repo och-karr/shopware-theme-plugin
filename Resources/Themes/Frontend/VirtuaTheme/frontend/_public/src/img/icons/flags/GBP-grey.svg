@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 258 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;fill:#898b8e;">
+    <g id="Page 6" transform="matrix(4.16667,0,0,4.16667,-38,-80)">
+        <g id="Layer 1">
+            <path d="M70,36L43,36L43,20L37,20L37,36L10,36L10,44L37,44L37,60L43,60L43,44L70,44" style="fill-rule:nonzero;"/>
+            <path d="M50,33.333L45.528,33.333L65.528,20L70,20L50,33.333ZM30,46.666L34.472,46.666L14.472,60L10,60L30,46.666ZM30,33.333L25.528,33.333L10,22.981L10,20L30,33.333ZM50,46.666L54.472,46.666L70,57.018L70,60" style="fill-rule:nonzero;"/>
+            <path d="M45,20L45,32.195L63.292,20L45,20ZM35,20L35,32.195L16.708,20L35,20ZM45,60L45,47.805L63.292,60L45,60ZM35,60L35,47.805L16.708,60L35,60ZM70,33.333L70,24.472L56.708,33.333L70,33.333ZM10,33.333L10,24.472L23.292,33.333L10,33.333ZM70,46.667L70,55.528L56.708,46.667L70,46.667ZM10,46.667L10,55.528L23.292,46.667" style="fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

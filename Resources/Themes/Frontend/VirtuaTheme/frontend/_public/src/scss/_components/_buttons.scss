@@ -1,0 +1,88 @@
+.sm-btn {
+   padding: 16px 30px;
+   background-color: $almost-black;
+   border: none;
+   color: white;
+
+   &:hover {
+     background-color: $rollovers-color;
+   }
+}
+
+.md-btn {
+  padding: 20px 30px;
+  background-color: $white;
+  border: 1px solid $almost-black;
+  color: $almost-black;
+
+  &:hover {
+    background-color: $almost-black;
+    color: white;
+  }
+}
+
+.wide-btn {
+  padding: 20px 0;
+  background-color: $almost-black;
+  border: none;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.wide-lg-btn {
+  padding: 26px 0;
+  background-color: $almost-black;
+  border: none;
+  color: white;
+  display: block;
+  width: 100%;
+
+  &:hover {
+    background-color: $rollovers-color;
+  }
+}
+
+/* The container of radio button */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+
+  /* Hide the browser's default radio button */
+  .radio-input {
+    display:none;
+
+    /* Show the indicator (dot/circle) when checked */
+    &:checked ~ .radio-checkmark:after {
+      display: block;
+    }
+  }
+
+  /* Create a custom radio button */
+  .radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $dark-color;
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+
+      top: 3px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $light-color;
+    }
+  }
+}

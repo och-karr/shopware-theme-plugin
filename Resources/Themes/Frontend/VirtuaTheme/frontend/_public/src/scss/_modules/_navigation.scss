@@ -1,0 +1,117 @@
+.navigation-main {
+  position: sticky;
+  top: 42px;
+  z-index: 200;
+
+  @media all and (max-width: 767px) {
+    display: none;
+  }
+
+  .container {
+
+    .navigation--list-wrapper {
+      background-color: $white;
+      opacity: 0.98;
+      border-bottom: 1px solid $lighter-color;
+
+      .navigation--list {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        .navigation--entry {
+
+          .navigation--link {
+            @extend .caps-font;
+            display: block;
+            text-decoration: none;
+            color: $dark-color;
+            padding: $sm-gutter $xsm-gutter;
+            cursor: pointer;
+
+            &:hover {
+              color: $rollovers-color;
+            }
+          }
+        }
+      }
+    }
+
+    .advanced-menu {
+      background-color: $white;
+      opacity: 0.98;
+      position: fixed;
+      top: 102px;
+      width: 100%;
+
+      .button-container {
+        display: none;
+      }
+
+      .menu--container {
+        display: none;
+
+        &.menu--is-active {
+          display: block;
+        }
+
+        .content--wrapper {
+          padding-top: $md-space+$sm-space;
+          padding-bottom: $md-space+$md-space;
+
+          .menu--list {
+            margin: auto;
+            padding: 0;
+            width:($col-width * 4 + $md-gutter * (4 - 1));
+            column-count: 4;
+            column-width: $col-width;
+
+            &-item {
+
+             &-link {
+               @extend .body-font-1;
+               display: inline-block;
+               padding-bottom: $md-gutter;
+               color: $dark-color;
+               text-decoration: none;
+              }
+            }
+          }
+
+          .extended-submenu {
+            display: flex;
+            justify-content: center;
+            width: auto;
+            column-count: auto;
+            column-width: $col-width;
+
+            &-item {
+              padding-right: $md-space;
+
+              &:last-of-type {
+                padding-right: 0;
+              }
+
+              >.menu--list-item-link {
+                @extend .caps-font;
+                border-bottom: 1px dotted $dark-color;
+                display: inline-block;
+                width: 100%;
+                margin-bottom: $sm-gutter;
+                padding-bottom: $sm-gutter;
+              }
+
+              >.menu--list {
+                column-count: auto;
+                column-width: $col-width;
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+.formfield {
+  padding: 24px 30px;
+  background-color: $super-light-color;
+  border: none;
+  color: $dark-color;
+
+  &::placeholder {
+    color: $light-color;
+  }
+
+  &:focus {
+    border: 1px solid $almost-black;
+    background-color: $white;
+    outline: none;
+  }
+}
+
+.formfield-error {
+  border: 1px solid $alert-color;
+}

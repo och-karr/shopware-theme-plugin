@@ -1,0 +1,142 @@
+.footer-main {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $lg-space;
+  padding-top: $md-space + $lg-space;
+  background-color: $almost-black;
+
+  .container {
+
+    //newsletter and logo styles
+    .column--newsletter {
+      width: 100%;
+
+      .column--logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+          max-width: 100%;
+          display: block;
+        }
+      }
+
+      .column--content {
+        margin-bottom: $lg-gutter;
+
+        .newsletter--form {
+          display: flex;
+          justify-content: center;
+
+          .content {
+            display: inline-block;
+            @include element-width(12, 4);
+            max-width: 2 * $col-width;
+            min-width: 270px;
+            position: relative;
+
+            @media all and (max-width: 575px) {
+              width: 100%;
+              padding: 0 $sm-space;
+            }
+
+            .newsletter--field {
+              width: 100%;
+              @extend .body-font-2;
+              padding: 12px $xsm-gutter;
+              background-color: transparent;
+              color: $white;
+              border: 0;
+              border-bottom: 2px solid $white;
+              outline: none;
+              box-sizing: border-box;
+
+              &::placeholder {
+                color: $dark-color;
+              }
+            }
+
+            .newsletter--button {
+              width: 16px;
+              height: 16px;
+              right: $xsm-gutter;
+              bottom: $xsm-gutter;
+              padding: 0;
+              background: url('../../src/img/icons/menu/enter-key.svg');
+              background-size: contain;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              transform: scale(1,-1);
+              position: absolute;
+
+              &:hover {
+                width: 16px;
+                height: 16px;
+                background: url('../../src/img/icons/menu/enter-key-color.svg');
+                background-size: contain;
+                transform: scale(1,-1);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //general styles for columns (bottom columns)
+    .footer--columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .footer--column {
+        width: $col-width;
+        padding-left: $md-gutter;
+
+        @media all and (max-width: 767px) {
+          padding-left: $sm-space;
+        }
+
+        @media all and (max-width: 575px) {
+          width: 100%;
+        }
+
+        .column--headline {
+          margin-bottom: $lg-gutter;
+          color: $white;
+
+          @media all and (max-width: 575px) {
+            margin-top: $lg-gutter;
+            margin-bottom: $md-gutter;
+          }
+        }
+
+        .column--navigation {
+
+          .navigation--list {
+            padding: 0;
+            margin: 0;
+
+            .navigation--entry {
+
+              .navigation--link {
+                max-width: $col-width;
+                @extend .body-font-2;
+                color: $dark-color;
+
+                &:hover {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer--bottom {
+      display: none;
+    }
+  }
+}

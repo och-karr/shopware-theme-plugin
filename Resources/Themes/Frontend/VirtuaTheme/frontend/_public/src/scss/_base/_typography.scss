@@ -1,0 +1,36 @@
+h1 {
+  font-family: $main-font-bold;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.96px;
+}
+
+h2 {
+  font-family: $main-font-bold;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.6px;
+}
+
+h3 {
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
+
+h4 {
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+}
+
+h5 {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}

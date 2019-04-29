@@ -1,0 +1,121 @@
+.homepage-banner-slider {
+  padding-bottom: 0 !important;
+
+  .emotion--banner-slider {
+    overflow: hidden;
+    position: relative;
+
+    >.banner-slider--title {
+      display: none;
+    }
+
+    .banner-slider--container {
+
+      .banner-slider--slide {
+        display: flex;
+        width: 100vw;
+
+        .banner-slider--item {
+          width: 100vw !important;
+          height: auto !important;
+          position: relative;
+
+          .banner-slider--banner {
+            width: 100vw !important;
+            height: auto !important;
+
+            .banner-slider--image {
+              width: 100%;
+            }
+          }
+
+          .banner-slider--text {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            color: $almost-black;
+            flex-direction: column;
+
+            .banner-slider--text-link {
+              color: $almost-black;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .image-slider--dots {
+        position: absolute;
+        bottom: $md-gutter;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        height: 10px;
+        align-items: center;
+
+        .dot--link {
+          width: 6px;
+          height: 6px;
+          background-color: $light-color;
+          border-radius: 50%;
+          margin: 0 15px;
+
+          &:hover {
+            cursor: pointer;
+            padding: 2px;
+            margin: 0 13px;
+          }
+        }
+
+        .is--active {
+          background-color: $dark-color;
+        }
+      }
+    }
+  }
+}
+
+//additional media styles
+@media all and (max-width: 767px) {
+
+  .emotion--element {
+
+    .emotion--banner-slider {
+      overflow: hidden;
+      position: relative;
+
+      .banner-slider--title {
+        display: none;
+      }
+
+      .banner-slider--container {
+
+        .banner-slider--slide {
+          display: flex;
+          width: 100vw;
+
+          .banner-slider--item {
+            width: 100vw !important;
+            height: 80vh !important;
+
+            .banner-slider--banner {
+              width: 100vw !important;
+              height: 80vh !important;
+
+              .banner-slider--image {
+                height: 80vh;
+                overflow: hidden;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

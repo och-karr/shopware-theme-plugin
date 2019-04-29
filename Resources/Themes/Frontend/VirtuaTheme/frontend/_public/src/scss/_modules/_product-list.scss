@@ -1,0 +1,90 @@
+.homepage-product-list {
+
+  .emotion--product-list {
+
+    .product-list--title {
+      margin-top: $xxlg-gutter;
+      margin-bottom: 0;
+      text-align: center;
+      color: $almost-black;
+    }
+
+    .product-list--content {
+
+      .product-list--container {
+        padding: $xxsm-gutter $sm-space $xlg-gutter $sm-space;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .product-list--item {
+          width: 33%;
+          padding: 20px 15px 0 15px;
+          box-sizing: border-box;
+
+          @media all and (max-width: 767px) {
+            width: 50%;
+          }
+
+          .product--box {
+
+            .box--content {
+
+              .product--info {
+
+                .product--image {
+
+                  .image--element {
+
+                    .image--media {
+
+                      picture {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                          width: 100%;
+                          background-repeat: no-repeat;
+                          height: 0;
+                          padding-bottom: 100%;
+                          background-size: contain;
+                          background-position: center;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .product--details {
+                  padding-top: 10px;
+
+                  .product--title {
+                    @extend .body-font-1;
+                    text-transform: uppercase;
+                    color: $dark-color;
+                    display: block;
+                    text-align: center;
+                  }
+
+                  .product--price-info {
+                    text-align: center;
+
+                    .product--price {
+
+                      .price--default {
+                        @extend .body-font-1;
+                        color: $light-color;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

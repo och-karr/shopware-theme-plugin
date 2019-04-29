@@ -1,0 +1,18 @@
+@font-face {
+  font-family: ProximaNova;
+  src:url(../fonts/ProximaNova-Reg-webfont.woff);
+}
+
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src:url(../fonts/proxima-nova-semibold.woff);
+}
+
+@font-face {
+  font-family: ProximaNovaBold;
+  src:url(../fonts/proxima-nova-bold.woff);
+}
+
+$main-font: ProximaNova;
+$main-font-semibold: ProximaNovaSemibold;
+$main-font-bold: ProximaNovaBold;

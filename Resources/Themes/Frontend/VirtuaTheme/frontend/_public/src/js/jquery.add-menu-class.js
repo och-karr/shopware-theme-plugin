@@ -1,0 +1,1 @@
+$('.menu--list').has('ul').addClass('extended-submenu');

@@ -1,0 +1,214 @@
+.page-wrap {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.moved-page-wrap {
+  left: 100%;
+  transition: all .45s;
+}
+
+//close icon
+.entry--close-off-canvas {
+  list-style-type: none;
+
+  .close-link {
+    position: fixed;
+    z-index: 4400;
+    top: 17px;
+    right: 13px;
+
+    .icon--arrow-right {
+
+      .close-icon {
+        height: 20px;
+      }
+    }
+  }
+}
+
+.sidebar-main {
+  width: calc(100% - 50px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 4000;
+  transform: translateX(-100%);
+  left: 0;
+  transition: all .45s cubic-bezier(.3, 0, .15, 1);
+  -webkit-overflow-scrolling: touch;
+  background-color: $white;
+
+  .navigation--smartphone {
+
+    .navigation--list {
+      margin: 0;
+    }
+
+    //logo
+    .mobile-nav-logo--shop {
+      height: 60px;
+      border-bottom: 1px solid $light-color;
+
+      .logo--link {
+        text-align: center;
+        display: block;
+        height: 100%;
+
+        .mobile-nav-logo-img {
+          height: 100%;
+          padding: 7px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+
+  .sidebar--categories-wrapper {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    position: absolute;
+
+    //sites with icons
+    .shop-sites--container {
+
+      .navigation--items {
+        margin: 0;
+        padding: 0;
+
+        .navigation--entry {
+          height: 60px;
+          border-bottom: 1px solid $light-color;
+          display: flex;
+          align-items: center;
+
+          .top-bar-icon, .shop-nav-icon {
+            margin-left: 15px;
+
+            @media all and (max-width: 767px) {
+              display: inline-block;
+            }
+
+            .top-label {
+              @extend .caps-font;
+              padding-left: 40px;
+              color: $dark-color;
+
+              @media all and (max-width: 767px) {
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //menu and submenu categories
+  .sidebar--navigation {
+    padding: 0;
+    margin: 0;
+
+    .navigation--entry {
+      height: 60px;
+      border-bottom: 1px solid $light-color;
+
+      .navigation--link {
+        color: $dark-color;
+        text-decoration: none;
+        @extend .caps-font;
+        line-height: 60px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .is--icon-right, .is--icon-left {
+          display: flex;
+          align-items: center;
+
+          //arrow left and arrow right
+          .mobile-nav-arrow-icon {
+            height: 15px;
+          }
+        }
+
+        //labels - sup text next to category or item
+        .category-name {
+
+          .category-label {
+            color: $rollovers-color;
+          }
+        }
+      }
+    }
+  }
+
+  //subcategories
+  .offcanvas--overlay {
+    background-color: $white;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1100;
+
+    .categories--sublevel {
+
+      .navigation--entry {
+        border-bottom: none;
+        overflow: hidden;
+
+        .navigation--link {
+          text-transform: capitalize;
+        }
+      }
+
+      //return link to the previous category
+      .nav-back {
+        background-color: $lighter-color;
+
+        .navigation--link {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          height: 100%;
+
+          .arrow-icon-back {
+            transform: rotate(180deg);
+            margin: 0 9px 2px 0;
+            pointer-events: none;
+          }
+
+          .category--headline {
+            color: $rollovers-color;
+            @extend .caps-font;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+//classes for sidebar menu
+.shadowed {
+  box-shadow: 43px 0px 60px 105px rgba(0,0,0,0.54);
+
+  @media all and (min-width: 768px) {
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.54);
+  }
+}
+
+.is--inactive {
+  overflow: hidden !important;
+}
+
+.is--open {
+  transform: translateX(0);
+}
+
+
+

@@ -1,0 +1,24 @@
+.not-displayed {
+  display: none;
+}
+
+.reset-spaces {
+  padding: 0;
+  margin: 0;
+}
+
+.emotion--container {
+  margin-left: 0 !important;
+}
+
+.emotion--element {
+  padding-left: 0 !important;
+}
+
+[class*="emotion--sizer-"] {
+  //display: none;
+}
+
+.content-main {
+  overflow: hidden;
+}

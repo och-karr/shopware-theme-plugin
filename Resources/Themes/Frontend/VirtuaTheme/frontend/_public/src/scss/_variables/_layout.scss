@@ -1,0 +1,8 @@
+$col-width: 165px;
+
+$module: 4;
+$col-quantity: 12;
+
+@mixin element-width($col-quantity, $module) {
+  width: 100% / $col-quantity * $module;
+}

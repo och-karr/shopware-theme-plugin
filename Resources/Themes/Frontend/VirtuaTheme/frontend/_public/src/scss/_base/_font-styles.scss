@@ -1,0 +1,43 @@
+.body-font-1 {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+}
+
+.body-font-2 {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+}
+
+.body-font-3 {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.56px;
+}
+
+.btn-font {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.caps-font {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+
+.caption-font {
+  font-family: $main-font;
+  font-size: 8px;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+}
